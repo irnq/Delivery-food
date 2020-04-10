@@ -1,0 +1,97 @@
+.header{
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-column-gap: 10vw;
+  align-items: center;
+  @media only screen and (max-width: 55rem){
+    grid-column-gap: 6vw;
+  }
+  @media only screen and (max-width: 37rem){
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 2rem;
+  }
+  @media only screen and (max-width: 26rem){
+    grid-template-columns: repeat(auto-fit, max-content);
+  }
+
+
+  
+  &__buttons{
+    display: grid;
+    grid-template-columns:repeat(2,min-content);
+    grid-column-gap: 1rem;
+    @media only screen and (max-width: 37rem){
+    grid-row: 1/2;  
+    grid-column: 2/3;
+    justify-self: end;
+    }
+    // @media only screen and (max-width: 26rem){
+    //   grid-row: 2/3;
+    //   grid-column: 1/-1;
+    //   justify-self: center;
+    // }
+  }
+  &__button{
+    // display: flex;
+    // box-sizing: border-box;
+    // padding: 0.8rem 1.6rem;
+    // border: 1px solid #D9D9D9;
+    // box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    // border-radius: 2px;
+    // font-size: 1.6rem;
+    // line-height: 2.4rem;
+    // align-items: center;
+  
+    &__icon{
+      margin-right: 0.6rem;
+      @media only screen and (max-width: 26rem){
+        margin-right: 0;
+      }
+    }
+
+    &--text{
+      @media only screen and (max-width: 26rem){
+        display: none;
+      }
+    }
+    
+
+    &--login{
+      border: 1px solid #1890FF;
+      background-color: #1890FF;
+      color: #fff;
+      
+    }
+    &--cart{
+      background-color: #fff;
+      
+      color: #595959;
+
+    }
+    
+
+  }
+
+  &__input{
+
+    background-image: url(../img/home.svg);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+
+    @media only screen and (max-width: 37rem){
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      justify-self: center;
+      width: 55vw;
+    }
+
+    @media only screen and (max-width: 26rem){
+    
+      width: 100%;
+    }
+    
+
+  }
+}

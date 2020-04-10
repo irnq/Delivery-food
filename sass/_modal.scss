@@ -1,0 +1,132 @@
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.5rem;
+
+  display: none;
+
+  &__dialog{
+    max-width: 78rem;
+    width: 90%;
+    max-height: 56rem;
+    height: 80vh;
+    min-height: 46rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 4rem 4.5rem;
+    display: flex;
+    
+     flex-direction: column;
+    
+  }
+  &__header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    
+  }
+  .close{
+    
+    display: flex;
+    font-size: 5rem;
+    background-color: transparent;
+    border-style: none;
+    box-shadow: none;
+    padding:0;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+  }
+  &__content{
+   
+    &__row{
+      
+      display: flex;
+      border-bottom: 2px solid #E8E8E8;
+      padding-bottom: 1rem;
+      margin-bottom: 1.1rem;
+    }
+  }
+  &__buttons{
+    
+    display: flex;
+    
+    
+
+  }
+  &__footer{
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+}
+.modal-btn{
+    &:not(:last-child){
+      margin-right: 1.8rem;
+    }
+
+}
+.food{
+  
+  &--name{
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+  &--price{
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin-left: auto;
+    margin-right: 4.5rem;
+    white-space: nowrap;
+  }
+  &--counter{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    
+  }
+  
+}
+.counter-btn{
+  background-color: transparent;
+  border: 1px solid #40A9FF;
+  color: #40A9FF;
+  width: 4rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.counter{
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #000;
+  margin: auto 1.3rem;
+} 
+.full-price{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  white-space: nowrap;
+  background-color: #000000;
+  color:#fafafa;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+}
+
+.is-open{
+  display: flex;
+}
